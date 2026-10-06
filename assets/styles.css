@@ -415,3 +415,30 @@ body{font-size:17px;line-height:1.6}
   .academy-subnav{top:62px}
   .academy-subnav .container{gap:20px}
 }
+
+/* Publications page: citation list, name variants, link styles */
+.text-link{color:var(--ink);text-decoration:underline;text-decoration-color:#9aa3aa;text-underline-offset:3px}
+.text-link:hover{color:var(--blue);text-decoration-color:var(--blue)}
+.name-variants{margin:26px 0;border-top:1px solid var(--line)}
+.name-variants div{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:8px 32px;padding:14px 0;border-bottom:1px solid var(--line)}
+.name-variants dt{margin:0;font-size:17px;font-weight:650;color:var(--ink)}
+.name-variants dd{margin:0;font-size:15px;color:var(--muted)}
+.pub-list{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid var(--line)}
+.pub-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0 28px;padding:26px 0;border-bottom:1px solid var(--line)}
+.pub-year{font-size:15px;font-weight:650;color:var(--blue);font-variant-numeric:tabular-nums;padding-top:3px}
+.pub-item h3{margin:0 0 10px;font-size:19px;line-height:1.35;letter-spacing:-.015em;font-weight:620;color:var(--ink)}
+.pub-item p{margin:0}
+.pub-item .pub-authors{font-size:15px;line-height:1.55;color:var(--ink-2)}
+.pub-item .pub-authors strong{font-weight:700;color:var(--ink)}
+.pub-item .pub-source{margin-top:4px;font-size:15px;line-height:1.55;color:var(--muted)}
+.pub-item .pub-links{display:flex;flex-wrap:wrap;gap:0 22px;margin-top:8px;font-size:14px;line-height:1}
+.pub-links a{display:inline-flex;align-items:center;min-height:36px;font-weight:650;color:var(--ink);border-bottom:1px solid transparent}
+.pub-links a:hover{color:var(--blue)}
+.publication-links a:focus-visible,.pub-links a:focus-visible,.text-link:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+@media(max-width:760px){
+  .name-variants div{grid-template-columns:1fr}
+  .pub-item{grid-template-columns:1fr;padding:22px 0}
+  .pub-year{padding:0 0 6px;font-size:13px}
+  .pub-item h3{font-size:18px}
+  .pub-links a{min-height:44px}
+}
