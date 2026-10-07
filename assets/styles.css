@@ -442,3 +442,14 @@ body{font-size:17px;line-height:1.6}
   .pub-item h3{font-size:18px}
   .pub-links a{min-height:44px}
 }
+
+/* Research page: focus areas with related links */
+.prose-wide{max-width:var(--max)}
+.prose-wide>h2:first-child{margin-top:0}
+.research-lede{max-width:760px;margin:0 0 30px}
+.prose-wide .focus-title{margin:0;font-size:18px;line-height:1.35;letter-spacing:-.02em}
+.prose-wide .focus-copy p{margin:0;font-size:15px;line-height:1.65;color:var(--muted)}
+.prose-wide .focus-copy p+p{margin-top:10px}
+.prose-wide .focus-copy .focus-related{font-size:14px}
+.prose-wide>h2,.prose-wide>p{max-width:860px}
+.prose-wide .focus-related a{display:inline-block;padding:4px 0}
