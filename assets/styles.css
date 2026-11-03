@@ -453,3 +453,22 @@ body{font-size:17px;line-height:1.6}
 .prose-wide .focus-copy .focus-related{font-size:14px}
 .prose-wide>h2,.prose-wide>p{max-width:860px}
 .prose-wide .focus-related a{display:inline-block;padding:4px 0}
+
+/* Topic pages (pediatric-urology/*): breadcrumb, term list, topic lists, author block */
+.breadcrumb{margin:0 0 22px;font-size:13px}
+.breadcrumb ol{display:flex;flex-wrap:wrap;gap:4px 10px;margin:0;padding:0;list-style:none;color:var(--muted)}
+.breadcrumb li+li:before{content:"/";margin-right:10px;color:#9aa3aa}
+.breadcrumb a{display:inline-block;padding:4px 0;color:var(--ink-2);text-decoration:underline;text-decoration-color:#9aa3aa;text-underline-offset:3px}
+.breadcrumb a:hover{color:var(--blue)}
+.breadcrumb a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.topic-dl{margin:26px 0;border-top:1px solid var(--line)}
+.topic-dl div{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:8px 32px;padding:14px 0;border-bottom:1px solid var(--line)}
+.topic-dl dt{margin:0;font-size:17px;font-weight:650;color:var(--ink)}
+.topic-dl dd{margin:0;font-size:15px;line-height:1.65;color:var(--muted)}
+.topic-list{margin:14px 0 20px;padding-left:1.25em}
+.topic-list li{margin:0;padding:3px 0}
+.topic-author{margin-top:56px;padding-top:24px;border-top:1px solid var(--line)}
+.topic-author p{margin:0 0 8px;font-size:15px}
+.topic-author .topic-author-name{font-size:18px;font-weight:680;color:var(--ink)}
+.topic-author-links a{display:inline-block;margin:0 18px 0 0;padding:6px 0}
+@media(max-width:760px){.topic-dl div{grid-template-columns:1fr}}
